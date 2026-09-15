@@ -181,7 +181,7 @@ tbody tr:last-child th,tbody tr:last-child td{border-bottom:none}
 .slider{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;padding:4px 0 14px;margin-top:24px}
 .slider::-webkit-scrollbar{height:6px}
 .slider::-webkit-scrollbar-thumb{background:#E0DAEE;border-radius:99px}
-.slide img{width:100%;height:auto}
+.slide img{width:100%;height:auto;display:block}
 .slide{flex:0 0 260px;scroll-snap-align:start;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
 @media(min-width:760px){.slide{flex-basis:300px}}
 
@@ -532,12 +532,10 @@ footer p{font-size:14px;margin:0}
       <h2>Kata orang tua yang sudah menjalani.</h2>
     </div>
     <div class="slider">
-      <!-- GANTI: screenshot WhatsApp, tambah atau kurangi sesuai jumlah yang ada -->
-      <div class="slide"><img src="img/testi-1.webp" alt="Testimoni orang tua" loading="lazy"></div>
-      <div class="slide"><img src="img/testi-2.webp" alt="Testimoni orang tua" loading="lazy"></div>
-      <div class="slide"><img src="img/testi-3.webp" alt="Testimoni orang tua" loading="lazy"></div>
-      <div class="slide"><img src="img/testi-4.webp" alt="Testimoni orang tua" loading="lazy"></div>
-      <div class="slide"><img src="img/testi-5.webp" alt="Testimoni orang tua" loading="lazy"></div>
+      <!-- GANTI atau tambah: screenshot WhatsApp di folder img/ -->
+      <div class="slide"><img src="img/testi-1.webp" alt="Testimoni orang tua pengguna Mood Magic" width="640" height="1138" loading="lazy"></div>
+      <div class="slide"><img src="img/testi-2.webp" alt="Testimoni orang tua pengguna Mood Magic" width="640" height="1138" loading="lazy"></div>
+      <div class="slide"><img src="img/testi-3.webp" alt="Testimoni orang tua pengguna Mood Magic" width="640" height="1138" loading="lazy"></div>
     </div>
     <p style="font-size:14.5px;color:var(--muted-light)">Geser untuk melihat testimoni lainnya.</p>
   </div>
