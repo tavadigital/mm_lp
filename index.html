@@ -1,0 +1,639 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mood Magic — Latihan Saraf & Emosi 7 Menit/Hari untuk Anak 2–12 Tahun</title>
+<meta name="description" content="Aplikasi latihan saraf 7 menit sehari untuk anak yang gampang meledak. Peta Otak Emosi khusus anakmu, program 30 hari, 24 gerakan, dan protokol SOS 90 detik saat tantrum sedang terjadi.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<!--
+  GAMBAR: semua src memakai path relatif img/...
+  Taruh index.html, checkout.html, dan folder img/ dalam satu folder yang sama
+  supaya bisa dibuka langsung tanpa server. Kalau gambarnya nanti dipindah ke GitHub,
+  cari-ganti "img/" jadi URL raw repo kamu.
+  Tiap screenshot punya dua versi: -d (desktop) dan -m (mobile), dipilih otomatis lewat <picture>.
+-->
+<style>
+:root{
+  --ink:#2E2550;
+  --violet:#443A78;
+  --violet-deep:#332A5E;
+  --plum-soft:#F1EEF9;
+  --amber:#E89B4B;
+  --amber-deep:#C97C2C;
+  --amber-soft:#FDF1E1;
+  --mint:#E7F1EB;
+  --green:#2F7A54;
+  --rose:#C9354F;
+  --rose-soft:#FCEDF0;
+  --bg:#FFF8EE;
+  --card:#FFFFFF;
+  --line:#EDE6DA;
+  --muted:#635B85;
+  --muted-light:#918BAA;
+  --radius:14px;
+  --radius-lg:22px;
+  --maxw:1120px;
+  --maxw-text:760px;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  margin:0;background:var(--bg);color:var(--ink);
+  font-family:'Plus Jakarta Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  font-size:17px;line-height:1.65;overflow-x:hidden;padding-bottom:78px;
+}
+@media(min-width:900px){body{padding-bottom:0}}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+h1,h2,h3{margin:0;font-family:'Fraunces',Georgia,serif;font-weight:700;line-height:1.16;letter-spacing:-0.015em;color:var(--ink)}
+h1{font-size:clamp(28px,5.6vw,46px)}
+h2{font-size:clamp(24px,4.2vw,36px)}
+h3{font-size:clamp(19px,2.6vw,24px)}
+h4{margin:0;font-size:17px;font-weight:800;color:var(--ink)}
+p{margin:0 0 1rem}
+p:last-child{margin-bottom:0}
+strong{font-weight:700;color:var(--ink)}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+.narrow{max-width:var(--maxw-text);margin-left:auto;margin-right:auto}
+.mid{max-width:940px;margin-left:auto;margin-right:auto}
+.mid>p,.mid>.lead{max-width:68ch}
+.mid.center>p,.mid.center>.lead{max-width:60ch;margin-left:auto;margin-right:auto}
+section{padding:54px 0}
+@media(min-width:768px){section{padding:76px 0}}
+.sec-white{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.sec-plum{background:var(--plum-soft);border-top:1px solid #E4DFF3;border-bottom:1px solid #E4DFF3}
+.sec-violet{background:var(--violet);color:#fff}
+.sec-violet h2,.sec-violet h3,.sec-violet h4{color:#fff}
+.sec-violet .lead{color:#D6D1EE}
+.cap{font-family:'Fraunces',Georgia,serif;font-style:italic;font-size:19px;color:var(--muted);margin:0 0 10px}
+.sec-violet .cap{color:#C7C1E6}
+.lead{font-size:clamp(17px,2vw,19px);color:var(--muted)}
+.center{text-align:center}
+
+.site-head{background:var(--card);border-bottom:1px solid var(--line);padding:14px 0}
+.site-head .wrap{display:flex;align-items:baseline;justify-content:space-between;gap:14px}
+.logo{font-family:'Fraunces',Georgia,serif;font-size:21px;font-weight:700;letter-spacing:-0.02em;color:var(--ink)}
+.logo em{font-style:italic;color:var(--amber-deep)}
+.head-note{font-size:13.5px;color:var(--muted-light)}
+
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  background:var(--amber);color:#2A1602;text-decoration:none;
+  font-weight:800;font-size:17px;letter-spacing:-0.01em;
+  padding:17px 28px;border-radius:999px;border:none;cursor:pointer;
+  box-shadow:0 2px 0 var(--amber-deep);transition:transform .12s ease,box-shadow .12s ease;
+  text-align:center;width:100%;
+}
+@media(min-width:560px){.btn{width:auto;font-size:18px;padding:18px 34px}}
+.btn:hover{transform:translateY(-1px);box-shadow:0 3px 0 var(--amber-deep)}
+.btn:active{transform:translateY(1px);box-shadow:0 1px 0 var(--amber-deep)}
+.btn:focus-visible{outline:3px solid var(--violet);outline-offset:3px}
+.btn-note{font-size:14.5px;color:var(--muted);margin-top:12px}
+.sec-violet .btn-note{color:#C7C1E6}
+.cta-block{margin-top:26px}
+
+/* hero: gambar di kiri, teks di kanan */
+.hero{background:var(--card);padding:28px 0 44px;border-bottom:1px solid var(--line)}
+.hero-img{margin:20px 0 24px}
+.hero-hd{margin:0}
+.hero-img{min-width:0}
+.hero-img img{width:100%;height:auto;border-radius:var(--radius-lg)}
+.ph{background:var(--plum-soft);border:1px dashed #C9C0E8;border-radius:var(--radius-lg);aspect-ratio:4/5;display:flex;align-items:center;justify-content:center;text-align:center;padding:24px;color:var(--muted);font-size:15px}
+.hero-sub{margin-top:16px;font-size:clamp(17px,2vw,19px);color:var(--muted)}
+.hero-list{list-style:none;padding:0;margin:20px 0 0;display:grid;gap:10px}
+.hero-list li{position:relative;padding-left:28px;font-size:16.5px}
+.hero-list li::before{content:"";position:absolute;left:0;top:8px;width:16px;height:16px;border-radius:50%;background:var(--amber-soft);border:2px solid var(--amber)}
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.pill{background:var(--plum-soft);border:1px solid #E4DFF3;border-radius:999px;padding:7px 14px;font-size:14px;font-weight:700;color:var(--violet)}
+@media(min-width:900px){
+  .hero{padding:60px 0 68px}
+    .hero-grid{
+    display:grid;
+    grid-template-columns:minmax(0,420px) minmax(0,1fr);
+    grid-template-areas:"img hd" "img rest";
+    column-gap:54px;align-items:center;
+  }
+  .hero-hd{grid-area:hd;align-self:end}
+  .hero-rest{grid-area:rest;align-self:start;padding-top:18px}
+  .hero-img{grid-area:img;align-self:center;margin:0}
+  .hero-img{margin:0}
+}
+
+.grid{display:grid;gap:18px}
+@media(min-width:760px){.g2{grid-template-columns:repeat(2,minmax(0,1fr))}.g3{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius-lg);padding:24px}
+.sec-white .card{background:var(--bg)}
+.card h4{margin-bottom:8px}
+.card p{font-size:16px;color:var(--muted)}
+
+.scene{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--amber);border-radius:var(--radius);padding:22px 24px;margin-bottom:16px}
+.sec-white .scene{background:var(--bg)}
+.scene-q{font-family:'Fraunces',Georgia,serif;font-size:clamp(20px,3vw,25px);font-weight:700;margin-bottom:10px;line-height:1.25}
+.scene p{font-size:16.5px;color:var(--muted);margin:0}
+
+/* fitur: gambar di atas teks pada mobile, selang-seling di desktop */
+.feat{display:grid;gap:22px;align-items:center;margin-bottom:46px}
+.feat:last-child{margin-bottom:0}
+@media(min-width:880px){
+  .feat{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px}
+  .feat.rev .feat-txt{order:2}
+}
+.feat-img{min-width:0}
+.feat-img img,.feat-img picture{width:100%;height:auto;max-width:100%}
+.feat-img img{border-radius:var(--radius-lg);border:1px solid var(--line);background:#fff}
+.tag{display:inline-block;background:var(--amber-soft);color:var(--amber-deep);font-size:13px;font-weight:800;padding:5px 13px;border-radius:999px;margin-bottom:12px}
+.tag-rose{background:var(--rose-soft);color:var(--rose)}
+.tag-mint{background:var(--mint);color:var(--green)}
+.feat p{font-size:16.5px;color:var(--muted)}
+.mini{list-style:none;padding:0;margin:14px 0 0;display:grid;gap:8px}
+.mini li{position:relative;padding-left:22px;font-size:15.5px;color:var(--muted)}
+.mini li::before{content:"";position:absolute;left:0;top:9px;width:8px;height:8px;border-radius:50%;background:var(--amber)}
+.sec-violet .feat p,.sec-violet .mini li{color:#D6D1EE}
+
+.step{display:flex;gap:16px;padding:22px 0;border-bottom:1px solid var(--line)}
+.step:last-child{border-bottom:none}
+.step-n{flex:0 0 38px;height:38px;border-radius:50%;background:var(--violet);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-family:'Fraunces',serif}
+.step p{font-size:16px;color:var(--muted);margin:6px 0 0}
+
+.tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin-top:26px;border:1px solid var(--line);border-radius:var(--radius-lg);background:var(--card)}
+table{border-collapse:collapse;width:100%;min-width:640px;font-size:15.5px}
+th,td{padding:14px 16px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+thead th{background:var(--plum-soft);font-size:13.5px;color:var(--violet);font-weight:800}
+tbody th{font-weight:700;color:var(--ink);width:180px}
+td.win{background:var(--amber-soft);color:var(--ink);font-weight:700}
+tbody tr:last-child th,tbody tr:last-child td{border-bottom:none}
+
+.tl{display:grid;gap:14px;margin-top:24px}
+@media(min-width:760px){.tl{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.tl-item{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:var(--radius);padding:22px 20px}
+.tl-k{font-family:'Fraunces',serif;font-size:24px;color:var(--amber);margin-bottom:6px}
+.tl-item p{font-size:15.5px;color:#D6D1EE;margin:0}
+
+.fit{list-style:none;padding:0;margin:14px 0 0;display:grid;gap:12px}
+.fit li{position:relative;padding-left:32px;font-size:16px;color:var(--muted)}
+.fit li::before{position:absolute;left:0;top:0;font-weight:800;font-size:17px}
+.fit.yes li::before{content:"✓";color:var(--green)}
+.fit.no li::before{content:"✕";color:var(--rose)}
+
+.slider{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;padding:4px 0 14px;margin-top:24px}
+.slider::-webkit-scrollbar{height:6px}
+.slider::-webkit-scrollbar-thumb{background:#E0DAEE;border-radius:99px}
+.slide img{width:100%;height:auto}
+.slide{flex:0 0 260px;scroll-snap-align:start;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+@media(min-width:760px){.slide{flex-basis:300px}}
+
+.offer{background:var(--card);border:1px solid var(--line);border-radius:var(--radius-lg);padding:26px;margin-top:26px}
+.offer-row{display:flex;justify-content:space-between;gap:16px;padding:11px 0;border-bottom:1px dashed var(--line);font-size:15.5px}
+.offer-row span:first-child{color:var(--muted)}
+.offer-row span:last-child{font-weight:700;color:var(--violet);white-space:nowrap;font-variant-numeric:tabular-nums}
+.offer-row.total{border-bottom:none;border-top:2px solid var(--line);margin-top:8px;padding-top:16px;font-size:17px}
+.offer-row.total span{color:var(--ink);font-weight:800}
+.price-box{background:var(--amber-soft);border:1px solid #F2DDC0;border-radius:var(--radius);padding:22px;text-align:center;margin-top:18px}
+.price-old{font-size:16px;color:var(--muted);text-decoration:line-through}
+.price-now{font-family:'Fraunces',serif;font-size:clamp(34px,7vw,46px);font-weight:700;line-height:1.1;margin:4px 0}
+.price-note{font-size:15px;color:var(--muted)}
+
+details{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);margin-bottom:12px;overflow:hidden}
+summary{cursor:pointer;list-style:none;padding:18px 48px 18px 20px;font-weight:700;position:relative;font-size:16.5px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";position:absolute;right:20px;top:15px;font-size:24px;color:var(--amber-deep);font-weight:400}
+details[open] summary::after{content:"–"}
+details p{padding:0 20px 18px;font-size:16px;color:var(--muted)}
+
+.sticky{position:fixed;left:0;right:0;bottom:0;background:var(--card);border-top:1px solid var(--line);padding:10px 16px;display:flex;align-items:center;gap:12px;z-index:40;box-shadow:0 -6px 18px rgba(46,37,80,.08)}
+.sticky-price{font-weight:800;font-size:16px;line-height:1.25}
+.sticky-price small{display:block;font-size:12px;font-weight:600;color:var(--muted)}
+.sticky .btn{width:auto;flex:1;padding:14px 18px;font-size:16px}
+@media(min-width:900px){.sticky{display:none}}
+
+footer{background:var(--violet-deep);color:#C7C1E6;padding:34px 0;text-align:center}
+footer .logo{color:#fff;display:block;margin-bottom:8px}
+footer .logo em{color:var(--amber)}
+footer p{font-size:14px;margin:0}
+</style>
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap">
+    <div class="logo">Mood <em>Magic</em></div>
+    <div class="head-note">Rp127.000, sekali bayar</div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<div class="hero">
+  <div class="wrap hero-grid">
+    <h1 class="hero-hd">Anak meledak bukan karena kurang didisiplin. Otaknya belum punya rem.</h1>
+    <div class="hero-img">
+      <img src="img/hero-mockup.webp" alt="Mood Magic, latihan saraf dan emosi 7 menit sehari" width="1080" height="1350" fetchpriority="high">
+    </div>
+    <div class="hero-rest">
+      <p class="hero-sub">Mood Magic adalah aplikasi latihan saraf 7 menit sehari yang melatih rem itu, dipandu langkah demi langkah, disusun khusus dari pola emosi anakmu sendiri.</p>
+      <ul class="hero-list">
+        <li>Isi 9 pertanyaan singkat, aplikasi menyusun <strong>Peta Otak Emosi</strong> anakmu: tipe pola sarafnya, tiga pemicu paling rawan, dan fokus latihannya.</li>
+        <li>Buka aplikasi, tekan mulai. <strong>Tiga gerakan, 7 menit,</strong> lengkap dengan timer dan kalimat siap ucap.</li>
+        <li>Anak sedang meledak? Tekan <strong>SOS Darurat</strong>: protokol 90 detik, lima langkah, plus daftar kalimat yang pantang keluar saat itu.</li>
+      </ul>
+      <div class="cta-block">
+        <a class="btn" href="checkout.html">Mulai Latihan 7 Menit Hari Ini, Rp127.000</a>
+        <p class="btn-note">Sekali bayar. Akses selamanya. Dibuka lewat browser HP atau laptop, tanpa install.</p>
+      </div>
+      <div class="pills">
+        <span class="pill">Program 30 hari</span>
+        <span class="pill">24 gerakan</span>
+        <span class="pill">4 jalur khusus</span>
+        <span class="pill">Sampai 3 profil anak</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ ADEGAN ============ -->
+<section>
+  <div class="wrap mid">
+    <p class="cap">Tiga kalimat yang mungkin kamu dengar minggu ini</p>
+    <h2>Kelihatan sepele. Ujungnya rumah ramai satu jam.</h2>
+    <div style="margin-top:26px">
+      <div class="scene">
+        <div class="scene-q">“Aku mau yang ungu.”</div>
+        <p>Gelasnya cuma beda warna, isinya sama persis. Sepuluh menit berikutnya badannya meronta di kursi, dan kamu berdiri di dapur sambil mikir, masa iya gara-gara gelas.</p>
+      </div>
+      <div class="scene">
+        <div class="scene-q">“Bentar, bentar lagi.”</div>
+        <p>Kamu ambil tabletnya, dia menjerit seperti kehilangan sesuatu yang besar. Malamnya susah merem, minta nonton lagi. Kamu tahu ini bukan soal tontonan, tapi belum tahu ini soal apa.</p>
+      </div>
+      <div class="scene">
+        <div class="scene-q">“Aku anak nakal ya, Bu?”</div>
+        <p>Guru menelepon lagi, temannya kena pukul lagi. Lalu malamnya dia nanya itu dari balik selimut, dan kamu diam, karena jawabannya jelas tidak, tapi kamu gak tahu harus mulai memperbaikinya dari mana.</p>
+      </div>
+    </div>
+    <p class="lead" style="margin-top:24px">Tiga adegan ini kelihatan beda. Akarnya satu, dan bukan karena kamu kurang tegas.</p>
+  </div>
+</section>
+
+<!-- ============ MEKANISME ============ -->
+<section class="sec-white">
+  <div class="wrap mid">
+    <p class="cap">Yang sebenarnya terjadi di kepalanya</p>
+    <h2>Rem itu otot. Dilatih saat tenang, dipakai saat kacau.</h2>
+    <p style="margin-top:18px">Saat keinginannya ditolak, otak emosi anak bereaksi lebih dulu. Rem logikanya menyala belakangan, dan pada usia 2 sampai 12 tahun bagian itu memang masih dibangun. Jadi ketika kamu menjelaskan panjang lebar di tengah tantrum, kamu sedang bicara ke bagian otak yang saat itu sedang mati.</p>
+    <p>Yang bisa dilatih justru lewat tubuh. Gerakan menyilang, pernapasan berirama, tekanan lembut pada otot. Latihan fisik ritmis yang teratur membangun jalur rem di batang otak, sehingga saat kekecewaan datang, tubuhnya sudah punya memori gerak untuk menurunkan tensinya sendiri.</p>
+    <p>Syaratnya satu, dan ini yang bikin buku parenting sering gagal. Latihan ini harus dilakukan <strong>saat anak sedang tenang</strong>, tiap hari, dalam porsi kecil. Bukan saat dia sudah di lantai supermarket.</p>
+    <div class="grid g3" style="margin-top:28px">
+      <div class="card"><h4>Fokus</h4><p>Gerakan silang dan koordinasi. Supaya instruksi masuk dan dia bisa pindah kegiatan tanpa ngambek.</p></div>
+      <div class="card"><h4>Tenang</h4><p>Pernapasan dan tekanan lembut. Supaya dia punya tombol turun sendiri sebelum meledak.</p></div>
+      <div class="card"><h4>Lepas energi</h4><p>Penyaluran tenaga terarah. Supaya energi yang numpuk gak keluar jadi pukulan atau jeritan.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PETA OTAK ============ -->
+<section class="sec-violet">
+  <div class="wrap">
+    <div class="feat">
+      <div class="feat-txt">
+        <span class="tag">Yang gak bisa dilakukan sebuah buku</span>
+        <h2>Programnya disusun untuk anakmu, bukan untuk anak orang lain.</h2>
+        <p style="margin-top:14px">Sebelum hari pertama, kamu jawab sembilan pertanyaan singkat: nama panggilan, usia, bentuk ledakannya, pemicu yang paling sering menyulut, lama pegang gadget, dan jam paling rawan di rumahmu.</p>
+        <p>Dari situ aplikasi menyusun <strong style="color:#fff">Peta Otak Emosi</strong> anakmu. Bukan istilah umum, tapi tipe pola sarafnya sendiri, misalnya Tipe Sumbu Pendek, lengkap dengan tiga pemicu paling rawan, fokus latihan yang paling dia butuhkan, dan catatan berapa lama ledakannya bertahan hari ini.</p>
+        <ul class="mini">
+          <li>Tingkat kesulitan gerakan menyesuaikan usia dan rentang fokusnya</li>
+          <li>Semua kalimat panduan menyebut nama anakmu langsung</li>
+          <li>Sampai tiga profil anak, masing-masing punya peta dan programnya sendiri</li>
+        </ul>
+      </div>
+      <div class="feat-img">
+        <picture>
+          <source media="(max-width:767px)" srcset="img/peta-otak-m.webp" width="504" height="980">
+          <img src="img/peta-otak-d.webp" alt="Layar Peta Otak Emosi di aplikasi Mood Magic" width="1200" height="692" loading="lazy">
+        </picture>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CARA KERJA ============ -->
+<section class="sec-plum">
+  <div class="wrap mid">
+    <p class="cap">Cara pakainya</p>
+    <h2>Kamu gak perlu hafal apa pun. Layarnya yang nuntun.</h2>
+    <div style="margin-top:20px">
+      <div class="step">
+        <div class="step-n">1</div>
+        <div><h4>Isi profil si kecil, sekali saja</h4><p>Sembilan pertanyaan, kurang dari dua menit. Hasilnya Peta Otak Emosi dan program 30 hari yang sudah disesuaikan.</p></div>
+      </div>
+      <div class="step">
+        <div class="step-n">2</div>
+        <div><h4>Tekan Mulai Latihan</h4><p>Tiga gerakan, masing-masing sudah ada timernya. Tiap gerakan menampilkan posisi, cara melakukan, tanda kalau sudah benar, dan kalimat yang tinggal kamu ucapkan ke anak.</p></div>
+      </div>
+      <div class="step">
+        <div class="step-n">3</div>
+        <div><h4>Catat kejadian dalam tiga ketukan</h4><p>Kalau hari itu sempat ada ledakan, tekan tombol merah: apa pemicunya, berapa lama sampai reda, lebih cepat atau belum. Tanpa mengetik. Grafiknya yang menjawab apakah ini jalan atau tidak.</p></div>
+      </div>
+    </div>
+    <div class="cta-block center">
+      <a class="btn" href="checkout.html">Ambil Akses Mood Magic, Rp127.000</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ISI APLIKASI ============ -->
+<section>
+  <div class="wrap">
+    <div class="mid center" style="margin-bottom:40px">
+      <p class="cap">Isi aplikasinya</p>
+      <h2>Bukan daftar bab. Daftar momen.</h2>
+      <p class="lead" style="margin-top:12px">Tiap bagian dibuat untuk satu waktu tertentu dalam harimu.</p>
+    </div>
+
+    <div class="feat rev">
+      <div class="feat-txt">
+        <span class="tag">Sore hari, sebelum jam rawan</span>
+        <h3>Program utama 30 hari</h3>
+        <p style="margin-top:12px">Buka aplikasi, hari ke berapa sudah tertulis di layar pertama. Tiga gerakan sudah dipilih dan diurutkan, karena saraf anak perlu dialirkan dulu sebelum diminta tenang. Tidak ada momen kamu berhenti dan bingung harus ngapain.</p>
+        <ul class="mini">
+          <li>Lingkaran progres 30 hari yang keisi tiap sesi selesai</li>
+          <li>Penjelasan singkat kenapa latihan 7 menit ini bekerja</li>
+          <li>Tombol SOS selalu ada di pojok, siap dipakai kapan saja</li>
+        </ul>
+      </div>
+      <div class="feat-img">
+        <picture>
+          <source media="(max-width:767px)" srcset="img/hari-ini-m.webp" width="504" height="980">
+          <img src="img/hari-ini-d.webp" alt="Layar latihan saraf hari ini" width="1200" height="887" loading="lazy">
+        </picture>
+      </div>
+    </div>
+
+    <div class="feat">
+      <div class="feat-txt">
+        <span class="tag">Selama tujuh menit itu</span>
+        <h3>Sesi terpandu, gerakan demi gerakan</h3>
+        <p style="margin-top:12px">Layar sesi memandu satu gerakan dalam satu waktu: posisi badan, apa yang dilakukan, tanda kalau sudah benar, plus kalimat yang tinggal kamu ucapkan ke anak dengan nada ceria.</p>
+        <ul class="mini">
+          <li>Timer per gerakan dengan aba-aba ritme napas</li>
+          <li>Mode Anak, satu kalimat besar dan hitungan mundur, supaya matanya balik ke kamu</li>
+          <li>Tombol khusus kalau anak menolak, sesi tetap jalan versi pendek</li>
+        </ul>
+      </div>
+      <div class="feat-img">
+        <picture>
+          <source media="(max-width:767px)" srcset="img/sesi-m.webp" width="504" height="980">
+          <img src="img/sesi-d.webp" alt="Layar sesi latihan dengan timer dan kalimat siap ucap" width="1200" height="907" loading="lazy">
+        </picture>
+      </div>
+    </div>
+
+    <div class="feat rev">
+      <div class="feat-txt">
+        <span class="tag tag-rose">Saat dia sudah di lantai</span>
+        <h3>Protokol SOS darurat, 90 detik</h3>
+        <p style="margin-top:12px">Saat ledakan sedang terjadi, kamu gak akan buka buku dan gak akan inget teori. Satu tombol merah, langkahnya muncul satu per satu dengan hitungan mundur, kalimatnya sependek mungkin supaya bisa dibaca sambil berlutut.</p>
+        <ul class="mini">
+          <li>Turunkan tubuh sejajar matanya, satu kalimat saja, amankan sekitar</li>
+          <li>Tiap langkah punya daftar hal yang pantang diucapkan pada fase itu</li>
+          <li>Ditutup pertanyaan apakah sudah reda, kejadiannya tersimpan otomatis</li>
+        </ul>
+      </div>
+      <div class="feat-img">
+        <picture>
+          <source media="(max-width:767px)" srcset="img/sos-m.webp" width="504" height="952">
+          <img src="img/sos-d.webp" alt="Protokol SOS darurat 90 detik" width="1036" height="1092" loading="lazy">
+        </picture>
+      </div>
+    </div>
+
+    <div class="feat">
+      <div class="feat-txt">
+        <span class="tag tag-mint">Akhir minggu</span>
+        <h3>Grafik durasi ledakan</h3>
+        <p style="margin-top:12px">Ini bagian yang tidak bisa dijanjikan produk berbentuk tulisan. Kamu bisa lihat angkanya. Durasi awal anakmu tercatat sejak hari pertama, lalu tiap kejadian yang kamu catat masuk ke grafik dan garisnya bergerak sendiri.</p>
+        <ul class="mini">
+          <li>Riwayat kejadian lengkap dengan pemicu, jam, dan lama reda</li>
+          <li>Ringkasan mingguan, pemicu terbanyak minggu ini apa</li>
+          <li>Buku Kemajuan format cetak A4, bisa diprint di rumah</li>
+        </ul>
+      </div>
+      <div class="feat-img">
+        <picture>
+          <source media="(max-width:767px)" srcset="img/progres-m.webp" width="504" height="980">
+          <img src="img/progres-d.webp" alt="Grafik durasi ledakan dan riwayat kejadian emosi" width="1200" height="907" loading="lazy">
+        </picture>
+      </div>
+    </div>
+
+    <div class="feat rev">
+      <div class="feat-txt">
+        <span class="tag">Kapan saja</span>
+        <h3>24 gerakan dan empat jalur khusus</h3>
+        <p style="margin-top:12px">Di luar sesi harian ada bank gerakan yang bisa disaring sesuai suasana anak saat itu, mulai dari tenang, fokus, transisi, lepas energi, sampai tidur. Butuh reset cepat tanpa sesi penuh, Acak Ajaib memutar satu gerakan sesuai suasananya.</p>
+        <ul class="mini">
+          <li>Detoks Layar 14 hari, latihan lepas dari gadget tanpa amukan</li>
+          <li>Tidur Tenang 10 hari, relaksasi 30 menit sebelum tidur</li>
+          <li>Pagi Tanpa Drama 7 hari, lima menit sebelum berangkat sekolah</li>
+          <li>Aman di Sekolah 21 hari, lepas energi pagi dan penenang sore</li>
+        </ul>
+      </div>
+      <div class="feat-img">
+        <picture>
+          <source media="(max-width:767px)" srcset="img/perpustakaan-m.webp" width="504" height="980">
+          <img src="img/perpustakaan-d.webp" alt="Perpustakaan gerakan dan jalur khusus" width="1200" height="907" loading="lazy">
+        </picture>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OBJEKSI LAYAR ============ -->
+<section class="sec-white">
+  <div class="wrap mid">
+    <p class="cap">Pertanyaan yang wajar banget</p>
+    <h2>“Masalah anakku justru layar. Kok solusinya aplikasi?”</h2>
+    <p class="lead" style="margin-top:16px">Karena yang memegang layar di sini kamu, bukan anakmu.</p>
+    <p style="margin-top:14px">Mood Magic bukan permainan yang dimainkan anak sendirian. Semua gerakannya dilakukan dengan tubuh, di dunia nyata, berdua denganmu. Layar cuma dipakai untuk membaca instruksi dan menjalankan timer, lalu ditaruh.</p>
+    <p>Bahkan Mode Anak, satu-satunya tampilan yang boleh dilihat anak, isinya cuma satu kalimat besar dan hitungan mundur, supaya matanya balik ke kamu secepat mungkin. Dan kalau gadget memang akar masalahnya, ada jalur Detoks Layar 14 hari yang memang dibuat untuk itu.</p>
+  </div>
+</section>
+
+<!-- ============ VS EBOOK ============ -->
+<section>
+  <div class="wrap">
+    <div class="mid">
+      <p class="cap">Perbandingan jujur</p>
+      <h2>Kenapa aplikasi, bukan ebook parenting.</h2>
+      <p class="lead" style="margin-top:12px">Jam delapan malam, badan capek. Kamu gak akan inget halaman 84.</p>
+    </div>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th></th><th>Ebook parenting</th><th>Kelas online</th><th>Mood Magic</th></tr></thead>
+        <tbody>
+          <tr><th>Kapan dipakai</th><td>Saat sempat baca</td><td>Saat jadwal kelas</td><td class="win">Setiap hari, 7 menit</td></tr>
+          <tr><th>Menyesuaikan anakmu</th><td>Tidak</td><td>Tidak</td><td class="win">Peta Otak Emosi per anak</td></tr>
+          <tr><th>Saat anak meledak</th><td>Harus cari halamannya</td><td>Gak bisa diakses</td><td class="win">Protokol SOS 90 detik</td></tr>
+          <tr><th>Kalimat yang diucapkan</th><td>Contoh umum</td><td>Contoh umum</td><td class="win">Siap ucap di tiap gerakan</td></tr>
+          <tr><th>Kalau anak menolak</th><td>Tidak dibahas</td><td>Tanya di grup</td><td class="win">Jalan keluarnya ada di layar</td></tr>
+          <tr><th>Bukti kemajuan</th><td>Perasaan</td><td>Perasaan</td><td class="win">Grafik durasi ledakan</td></tr>
+          <tr><th>Untuk anak kedua</th><td>Baca ulang</td><td>Bayar lagi</td><td class="win">Sampai 3 profil anak</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TIMELINE ============ -->
+<section class="sec-violet">
+  <div class="wrap">
+    <p class="cap">Yang biasanya berubah</p>
+    <h2>Dan kapan biasanya mulai kelihatan.</h2>
+    <div class="tl">
+      <div class="tl-item"><div class="tl-k">Minggu 1</div><p>Dia mulai nyaut saat dipanggil. Ledakan masih ada, tapi jeda sebelum meledak mulai terasa.</p></div>
+      <div class="tl-item"><div class="tl-k">Minggu 2</div><p>Durasinya memendek. Yang tadinya sepuluh menit, di grafikmu mulai turun ke satu digit.</p></div>
+      <div class="tl-item"><div class="tl-k">Minggu 3</div><p>Berhenti main jadi jauh lebih mudah. Dia bisa kecewa tanpa langsung banting badan.</p></div>
+      <div class="tl-item"><div class="tl-k">Hari 30</div><p>Dia mulai punya tombol tenangnya sendiri. Kamu gak perlu terus jadi tombol itu.</p></div>
+    </div>
+    <p class="lead" style="margin-top:22px">Ritme tiap anak beda. Yang menentukan bukan bakatnya, tapi tujuh menit yang kamu jalanin tanpa bolong.</p>
+  </div>
+</section>
+
+<!-- ============ COCOK ============ -->
+<section class="sec-white">
+  <div class="wrap">
+    <div class="grid g2">
+      <div class="card">
+        <h3>Cocok kalau</h3>
+        <ul class="fit yes">
+          <li>Anakmu 2 sampai 12 tahun, gampang meledak, mengamuk, atau memukul saat keinginannya ditolak</li>
+          <li>Kamu sudah coba ngomong baik-baik, tegas, dan nyita gadget, dan semuanya cuma bertahan dua hari</li>
+          <li>Kamu capek jadi orang tua yang teriak, dan gak mau anakmu inget kamu dengan cara itu</li>
+          <li>Kamu sanggup menyediakan tujuh menit sehari bersama anak, bukan dua jam seminggu</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Bukan untuk kamu kalau</h3>
+        <ul class="fit no">
+          <li>Kamu cari aplikasi yang bisa dimainkan anak sendirian sambil kamu istirahat. Ini alat untuk orang tua, semua latihan dijalankan bersama</li>
+          <li>Kamu berharap perubahan dalam dua hari tanpa ikut terlibat</li>
+          <li>Kamu mencari diagnosis atau terapi. Mood Magic alat latihan harian, bukan pengganti dokter atau psikolog anak</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONI ============ -->
+<section>
+  <div class="wrap">
+    <div class="mid">
+      <p class="cap">Nomor sengaja disensor untuk menjaga privasi pengirim</p>
+      <h2>Kata orang tua yang sudah menjalani.</h2>
+    </div>
+    <div class="slider">
+      <!-- GANTI: screenshot WhatsApp, tambah atau kurangi sesuai jumlah yang ada -->
+      <div class="slide"><img src="img/testi-1.webp" alt="Testimoni orang tua" loading="lazy"></div>
+      <div class="slide"><img src="img/testi-2.webp" alt="Testimoni orang tua" loading="lazy"></div>
+      <div class="slide"><img src="img/testi-3.webp" alt="Testimoni orang tua" loading="lazy"></div>
+      <div class="slide"><img src="img/testi-4.webp" alt="Testimoni orang tua" loading="lazy"></div>
+      <div class="slide"><img src="img/testi-5.webp" alt="Testimoni orang tua" loading="lazy"></div>
+    </div>
+    <p style="font-size:14.5px;color:var(--muted-light)">Geser untuk melihat testimoni lainnya.</p>
+  </div>
+</section>
+
+<!-- ============ PENAWARAN ============ -->
+<section class="sec-plum">
+  <div class="wrap mid">
+    <p class="cap">Penawaran</p>
+    <h2>Sekali makan di luar bareng keluarga, atau 30 hari melatih rem emosi anakmu.</h2>
+    <div class="offer">
+      <h4 style="margin-bottom:12px">Yang kamu dapat begitu kode akses dimasukkan</h4>
+      <div class="offer-row"><span>Peta Otak Emosi, asesmen pola saraf anakmu</span><span>Rp150.000</span></div>
+      <div class="offer-row"><span>Program utama 30 hari, sesi terpandu 7 menit</span><span>Rp150.000</span></div>
+      <div class="offer-row"><span>Bank 24 gerakan dengan penyaring suasana</span><span>Rp120.000</span></div>
+      <div class="offer-row"><span>Protokol SOS darurat 90 detik</span><span>Rp60.000</span></div>
+      <div class="offer-row"><span>Empat jalur khusus: detoks layar, tidur, pagi, sekolah</span><span>Rp120.000</span></div>
+      <div class="offer-row"><span>Catatan kejadian, grafik durasi ledakan, dan riwayat</span><span>Rp80.000</span></div>
+      <div class="offer-row"><span>Buku Kemajuan format cetak A4</span><span>Rp40.000</span></div>
+      <div class="offer-row"><span>Sampai tiga profil anak, masing-masing punya program sendiri</span><span>Gratis</span></div>
+      <div class="offer-row total"><span>Total nilai wajar</span><span>Rp720.000</span></div>
+      <div class="price-box">
+        <div class="price-old">Rp720.000</div>
+        <div class="price-now">Rp127.000</div>
+        <p class="price-note">Sekali bayar. Akses selamanya. Semua fitur terbuka, tanpa paket basic dan premium.</p>
+      </div>
+      <p style="margin-top:18px;font-size:16px;color:var(--muted)">Rp127.000 untuk 30 hari pertama berarti sekitar Rp4.200 sehari. Kurang dari satu jajan sore yang habis dalam lima menit. Yang ini dia bawa sampai dewasa.</p>
+      <div class="cta-block center">
+        <a class="btn" href="checkout.html">Ambil Akses Mood Magic, Rp127.000</a>
+        <p class="btn-note">Kode akses dikirim otomatis ke email yang kamu isi saat order.</p>
+      </div>
+    </div>
+    <p style="margin-top:18px;font-size:15px;color:var(--muted-light);text-align:center">Rp127.000 adalah harga perkenalan batch awal. Harga akan naik seiring penambahan fitur.</p>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section>
+  <div class="wrap mid">
+    <p class="cap">Pertanyaan yang sering masuk</p>
+    <h2>Sebelum kamu ambil.</h2>
+    <div style="margin-top:24px">
+      <details><summary>Ini aplikasi yang harus di-install?</summary><p>Tidak. Mood Magic dibuka lewat browser di HP, tablet, atau laptop. Tidak ada unduhan, tidak makan memori, dan tidak perlu update.</p></details>
+      <details><summary>Bagaimana cara masuk setelah bayar?</summary><p>Begitu pembayaran terkonfirmasi, kode akses dikirim otomatis ke email yang kamu isi saat order. Buka aplikasinya, masukkan kode itu di layar depan, isi profil si kecil, langsung mulai hari pertama. Tidak perlu bikin akun atau password.</p></details>
+      <details><summary>Emailnya gak masuk, gimana?</summary><p>Cek folder Promosi dan Spam dulu, karena email otomatis sering mendarat di sana. Kalau memang belum ada, balas resi pembayaranmu dan kode akses dikirim ulang manual.</p></details>
+      <details><summary>Akses berapa lama?</summary><p>Selamanya, tanpa langganan bulanan. Kode aksesnya tetap berlaku kalau kamu ganti HP atau ganti browser.</p></details>
+      <details><summary>Anak saya umur 2 tahun, atau 11 tahun. Cocok?</summary><p>Rentang yang didukung 2 sampai 12 tahun. Aplikasinya membagi tiga kelompok usia, dan tingkat kesulitan gerakan menyesuaikan kematangan motorik serta rentang fokusnya.</p></details>
+      <details><summary>Anak saya dua. Beli dua kali?</summary><p>Tidak perlu. Satu akses bisa dipakai sampai tiga profil anak, dan tiap anak punya peta otak, program, serta catatan progres sendiri.</p></details>
+      <details><summary>Perlu beli alat atau mainan khusus?</summary><p>Tidak. Semua gerakan hanya butuh tubuh kamu dan anak, dan bisa dilakukan di ruang sempit sekalipun.</p></details>
+      <details><summary>Butuh kuota besar?</summary><p>Tidak. Isinya panduan teks, timer, dan grafik. Tidak ada video yang perlu diputar, jadi ringan dipakai di koneksi seadanya.</p></details>
+      <details><summary>Bagaimana kalau anak saya menolak diajak latihan?</summary><p>Wajar di hari-hari awal, dan sudah diantisipasi. Di setiap gerakan ada tombol khusus untuk kondisi anak menolak, termasuk cara mengajak tanpa memaksa dan versi sesi yang lebih pendek supaya harinya tetap terisi.</p></details>
+      <details><summary>Ini bisa menggantikan terapi atau konsultasi psikolog?</summary><p>Tidak. Mood Magic alat latihan harian untuk di rumah. Kalau anakmu sedang dalam penanganan profesional, latihan ini berjalan berdampingan, bukan menggantikan.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PENUTUP ============ -->
+<section class="sec-violet">
+  <div class="wrap mid center">
+    <h2>Lima tahun lagi dia gak akan inget kamu beli aplikasi apa. Dia cuma inget rumahnya terasa seperti apa.</h2>
+    <p style="margin-top:18px;color:#D6D1EE">Kamu sudah coba ngomong baik-baik, sudah coba tegas, sudah coba nyita gadget. Dua hari kemudian balik lagi seperti semula.</p>
+    <p style="color:#D6D1EE">Bukan karena kamu kurang berusaha, tapi karena selama ini dia disuruh berhenti meledak, padahal yang dia butuh adalah dilatih supaya bisa.</p>
+    <p style="color:#fff;font-weight:700">Tujuh menit. Malam ini.</p>
+    <div class="cta-block">
+      <a class="btn" href="checkout.html">Mulai Latihan 7 Menit Hari Ini, Rp127.000</a>
+      <p class="btn-note">Sekali bayar. Akses selamanya. Dibuka dari HP atau laptop, tanpa install.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span class="logo">Mood <em>Magic</em></span>
+    <p>© 2026 Mood Magic. Semua hak dilindungi.</p>
+  </div>
+</footer>
+
+<div class="sticky">
+  <div class="sticky-price">Rp127.000<small>Sekali bayar, akses selamanya</small></div>
+  <a class="btn" href="checkout.html">Ambil Akses</a>
+</div>
+
+
+<script>
+(function(){
+  var hero=document.querySelector('.hero-img img');
+  if(hero){hero.addEventListener('error',function(){
+    var d=document.createElement('div');
+    d.className='ph';
+    d.textContent='Mockup hero 1080x1350 belum ada. Simpan hasil generate sebagai img/hero-mockup.webp';
+    hero.replaceWith(d);
+  });}
+  Array.prototype.forEach.call(document.querySelectorAll('.slide img'),function(img){
+    img.addEventListener('error',function(){ img.closest('.slide').remove(); });
+  });
+})();
+</script>
+</body>
+</html>
